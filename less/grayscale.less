@@ -364,8 +364,11 @@ header.intro {
 }
 
 .navbar-custom {
+    background: transparent;
+    border: none;
+    transition: background-color 300ms ease-in;
   .navbar-toggle {
-    background-color: black;
+    background-color: transparent;
   }
   .navbar-brand {
     margin-top: 8px;
@@ -373,6 +376,10 @@ header.intro {
       font-family: @montserrat;
       margin-top: 0px;
     }
+  }
+
+  &.black {
+    background-color: black;
   }
 }
 

@@ -326,8 +326,13 @@ header.intro {
   background: url(../img/downloads-bg.jpg) no-repeat top center scroll;
   background-size: cover;
 }
+.navbar-custom {
+  background: transparent;
+  border: none;
+  transition: background-color 300ms ease-in;
+}
 .navbar-custom .navbar-toggle {
-  background-color: black;
+  background-color: transparent;
 }
 .navbar-custom .navbar-brand {
   margin-top: 8px;
@@ -337,6 +342,9 @@ header.intro {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-top: 0px;
   }
+}
+.navbar-custom.black {
+  background-color: black;
 }
 ul.steps {
   padding-left: 0;
