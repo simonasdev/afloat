@@ -279,14 +279,13 @@ a {
 }
 
 .btn-default {
-    border: 1px solid @primary;
-    color: @primary;
+    border: 1px solid white;
+    outline: none;
+    color: white;
     background-color: transparent;
-    &:hover,
-    &:focus {
-        border: 1px solid @primary;
-        outline: none;
-        color: black;
+    &:hover, &:focus {
+        color: white;
+        border-color: @primary;
         background-color: @primary;
     }
 }
@@ -375,4 +374,15 @@ header.intro {
       margin-top: 0px;
     }
   }
+}
+
+ul.steps {
+    padding-left: 0;
+    li {
+        list-style: none;
+    }
+}
+
+#about p {
+    text-align: justify;
 }
