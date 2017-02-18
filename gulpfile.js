@@ -20,7 +20,6 @@ var banner = ['/*!\n',
 gulp.task('less', function() {
     return gulp.src('less/grayscale.less')
         .pipe(less())
-        .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
             stream: true
@@ -42,7 +41,6 @@ gulp.task('minify-css', ['less'], function() {
 gulp.task('minify-js', function() {
     return gulp.src('js/grayscale.js')
         .pipe(uglify())
-        .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('js'))
         .pipe(browserSync.reload({
