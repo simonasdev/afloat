@@ -316,7 +316,7 @@ img.logo {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 header.intro {
-  background: url(/img/intro-bg.jpg) no-repeat top center scroll;
+  background: url(../img/intro-bg.jpg) no-repeat top center scroll;
   background-size: cover;
 }
 .navbar-brand {
