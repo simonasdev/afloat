@@ -43,7 +43,6 @@ $(function() {
 
     // Use our detect's results. passive applied if supported, capture will be false either way.
     document.addEventListener('scroll', function () {
-        console.log($(window).scrollTop(), $('header').height())
         if ($(window).scrollTop() >= $('header').height() + 160) {
             $("nav").addClass("black");
         } else {
